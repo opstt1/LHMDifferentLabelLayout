@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2od-77-rT8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8qH-SG-dy4">
+            <objects>
+                <viewController id="2od-77-rT8" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xKO-gL-5wt"/>
+                        <viewControllerLayoutGuide type="bottom" id="eJf-9r-wuG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bNu-dO-sra">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-Fa-T1o">
+                                <frame key="frameInset" minX="21" minY="28" width="30" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="乱序">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDisorder:" destination="2od-77-rT8" eventType="touchUpInside" id="7e0-jC-gHK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r4-Oj-UNj">
+                                <frame key="frameInset" minX="56" minY="28" width="56" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="从小到大">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSortFromSmall:" destination="2od-77-rT8" eventType="touchUpInside" id="pgB-Ji-DWY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icj-bj-MFX">
+                                <frame key="frameInset" minX="117" minY="28" width="56" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="从大到小">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSortFromeBig:" destination="2od-77-rT8" eventType="touchUpInside" id="s3u-49-AOa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llG-lh-H70">
+                                <frame key="frameInset" minX="178" minY="28" width="70" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="大小分别取">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapGetFromBigAndSmall:" destination="2od-77-rT8" eventType="touchUpInside" id="SLU-eF-mI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd0-wI-uh8">
+                                <frame key="frameInset" minX="253" minY="28" width="56" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="迭代深搜">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDeepDfs:" destination="2od-77-rT8" eventType="touchUpInside" id="ML1-uQ-ivt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-SX-y2G">
+                                <frame key="frameInset" minY="70" width="320" height="410"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q5U-SX-y2G" firstAttribute="top" secondItem="xKO-gL-5wt" secondAttribute="bottom" constant="50" id="0J9-SZ-MNz"/>
+                            <constraint firstItem="8Jl-Fa-T1o" firstAttribute="top" secondItem="xKO-gL-5wt" secondAttribute="bottom" constant="8" id="2bt-Fc-wzl"/>
+                            <constraint firstItem="Icj-bj-MFX" firstAttribute="centerY" secondItem="1r4-Oj-UNj" secondAttribute="centerY" id="34o-QX-DCk"/>
+                            <constraint firstItem="1r4-Oj-UNj" firstAttribute="leading" secondItem="8Jl-Fa-T1o" secondAttribute="trailing" constant="5" id="Hg4-x3-hq0"/>
+                            <constraint firstItem="Q5U-SX-y2G" firstAttribute="width" secondItem="bNu-dO-sra" secondAttribute="width" id="IAA-hV-36F"/>
+                            <constraint firstItem="Q5U-SX-y2G" firstAttribute="centerX" secondItem="bNu-dO-sra" secondAttribute="centerX" id="Pna-RT-FgI"/>
+                            <constraint firstItem="llG-lh-H70" firstAttribute="centerY" secondItem="Icj-bj-MFX" secondAttribute="centerY" id="di4-ke-vnS"/>
+                            <constraint firstItem="1r4-Oj-UNj" firstAttribute="centerY" secondItem="8Jl-Fa-T1o" secondAttribute="centerY" id="dy1-cq-PHS"/>
+                            <constraint firstItem="8Jl-Fa-T1o" firstAttribute="leading" secondItem="bNu-dO-sra" secondAttribute="leadingMargin" constant="5" id="eJ8-9P-Kd0"/>
+                            <constraint firstItem="llG-lh-H70" firstAttribute="leading" secondItem="Icj-bj-MFX" secondAttribute="trailing" constant="5" id="eLC-Gl-78b"/>
+                            <constraint firstItem="dd0-wI-uh8" firstAttribute="leading" secondItem="llG-lh-H70" secondAttribute="trailing" constant="5" id="eRi-ZP-3XW"/>
+                            <constraint firstItem="Icj-bj-MFX" firstAttribute="leading" secondItem="1r4-Oj-UNj" secondAttribute="trailing" constant="5" id="kMC-uo-k8C"/>
+                            <constraint firstItem="dd0-wI-uh8" firstAttribute="centerY" secondItem="llG-lh-H70" secondAttribute="centerY" id="xs5-jN-3Jt"/>
+                            <constraint firstItem="eJf-9r-wuG" firstAttribute="top" secondItem="Q5U-SX-y2G" secondAttribute="bottom" id="zF4-e0-Tnm"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="drawView" destination="Q5U-SX-y2G" id="YVR-zY-1vh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hA3-ym-cK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="-223"/>
+        </scene>
+    </scenes>
+</document>
